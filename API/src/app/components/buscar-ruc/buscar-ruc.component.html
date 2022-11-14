@@ -1,0 +1,38 @@
+<div>
+  <input type="text" id="ruc" name="ruc" #ruc>
+  <button (click)="buscarRuc(ruc.value)">Buscar</button>
+</div>
+
+<div>
+  <p class="bold">Razon Social </p>
+  <span> :{{empresa.razonSocial}}</span>
+</div>
+<div>
+  <p class="bold">Dirección</p>
+  <p> : {{empresa.direccion}}</p>
+</div>
+<div>
+  <p class="bold">Nombre Comercial</p>
+  <p> : {{empresa.nombreComercial}}</p>
+</div>
+<div>
+  <p class="bold">Estado</p>
+  <p> : {{empresa.estado}}</p>
+</div>
+<div>
+  <p class="bold">Condicion</p>
+  <p> : {{empresa.condicion}}</p>
+</div>
+<div>
+  <p class="bold">Estado</p>
+  <p> : {{empresa.estado}}</p>
+</div>
+<div>
+  <p class="bold">Fecha Inscripción</p>
+  <p> : {{empresa.fechaInscripcion}}</p>
+</div>
+<div>
+  <p class="bold">Actividades secundarias</p>
+  <p *ngFor="let item of empresa.otrasActividades"> • {{item}}</p>
+</div>
+
